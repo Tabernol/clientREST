@@ -34,18 +34,18 @@ public class AuthenticationService {
                 .ipAddress(getIpAddress())
                 .build();
 
-        log.info(request.toString());
-        ResponseEntity<String> response =
-                restTemplate.postForEntity(authenticationUrl, request, String.class);
-
-
-        if (response.getStatusCode().is2xxSuccessful()) {
-            log.info("response from server " + response.getBody());
-            log.info("Authentication successful");
-        } else {
-            log.info("response from server " + response.getBody());
-            log.info("Authentication failed");
-        }
+//        log.info(request.toString());
+//        ResponseEntity<String> response =
+//                restTemplate.postForEntity(authenticationUrl, request, String.class);
+//
+//
+//        if (response.getStatusCode().is2xxSuccessful()) {
+//            log.info("response from server " + response.getBody());
+//            log.info("Authentication successful");
+//        } else {
+//            log.info("response from server " + response.getBody());
+//            log.info("Authentication failed");
+//        }
     }
 
     private String getIpAddress() {
