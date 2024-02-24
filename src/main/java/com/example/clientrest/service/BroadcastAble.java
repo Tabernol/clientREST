@@ -1,14 +1,21 @@
 package com.example.clientrest.service;
 
+import com.example.clientrest.entity.MediaCollection;
 import com.example.clientrest.entity.Schedule;
 import com.example.clientrest.entity.TimePeriod;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.List;
+
 public interface BroadcastAble {
+
+    public void startBroadcast();
 //
-//    void broadcastContent(TimePeriod timePeriod);
+//    void broadcastContent(List<MediaCollection> content);
+
+
 //
 //    void applyScheduleForMonitor(Schedule schedule);
 //
